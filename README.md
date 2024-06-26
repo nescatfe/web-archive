@@ -6,7 +6,7 @@ This project contains different components hosted in various environments. Here'
 
 ### 1. Main Landing Page
 - **Deployment Command**: `npm run deploy`
-- **Make sure to check again using**: 'git remote -v'
+- **Make sure to check again using**: `git remote -v`
 - **Hosting Location**: Local Computer
 - **Notes**: The main landing page files are hosted locally. Use the above command to deploy changes to the main landing page.
 
