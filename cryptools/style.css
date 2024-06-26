@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'HurmeFont';
+  src: url('fonts/HurmeGeometricSans2SemiBold.woff2') format('opentype');
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #282a36, #44475a); /* Enhanced gradient background */
+  font-family: 'Poppins', sans-serif;
+  color: #f8f8f2; /* Dracula foreground */
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: rgba(255, 121, 198, 0.1); /* Dracula pink with low opacity */
+}
+
+nav {
+  background-color: rgba(255, 121, 198, 0.2); /* Dracula pink with low opacity */
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(255, 121, 198, 0.3); /* Dracula pink shadow */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: #ff79c6; /* Dracula pink */
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #8be9fd; /* Dracula cyan */
+  text-shadow: 0 0 5px rgba(139, 233, 253, 0.5); /* Glow effect */
+}
+
+h1 {
+  font-family: 'HurmeFont', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #ff79c6; /* Dracula pink */
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 121, 198, 0.5); /* Glow effect */
+}
+
+.infinity {
+  color: #50fa7b; /* Dracula green for contrast */
+}
+
+.section-title {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+  color: #bd93f9; /* Dracula purple */
+}
+
+input {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 50px;
+  border: 2px solid #ff79c6; /* Dracula pink border */
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(40, 42, 54, 0.7); /* Dracula background with opacity */
+  color: #f8f8f2; /* Dracula foreground */
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(255, 121, 198, 0.5); /* Dracula pink glow */
+}
+
+#container-scanner, #container-chart {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  height: 60px;
+  width: 200px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+#button-bsc {
+  background-color: #ffb86c; /* Dracula orange */
+  background-image: url(img/binance_thumb.png);
+}
+
+#button-eth {
+  background-color: #8be9fd; /* Dracula cyan */
+  background-image: url(img/eth_thumb.png);
+}
+
+.button a {
+  position: relative;
+  color: #282a36; /* Dracula background */
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding-left: 40px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 121, 198, 0.5); /* Dracula pink glow */
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #6272a4; /* Dracula comment */
+  background-color: rgba(255, 121, 198, 0.1); /* Dracula pink with low opacity */
+}
+
+footer a {
+  color: #ff79c6; /* Dracula pink */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #bd93f9; /* Dracula purple */
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding-top: 2rem;
+  }
+  #container-chart, #container-scanner {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
