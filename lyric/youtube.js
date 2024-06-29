@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // Store the API key for the YouTube API
-  const apiKey = 'AIzaSyBJ-PXRhMKxYw3_dPX4j2tyqEyOyFF02SM';
+  const apiKey = 'YOUTUBE_API';
 
   // Get the search form and search query input element
   const form = document.querySelector('#search-form');
